@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>goww.io - Naked domain go www.domain</title>
+    <meta name="description" content="Free service for naked domains + ssl support">
+    <meta name="viewport" content="width=1100">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Ubuntu:200,300,400,500" rel="stylesheet">
+    <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font: 18px/25px 'Source Sans Pro', sans-serif;
+    }
+
+    .greenGradient {
+      color: #fff;
+      background-image: linear-gradient(160deg,#65d165 10%,#57D39C 80%);
+      background-attachment: fixed;
+      height: 100%;
+    }
+
+    .screen1 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .holder {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+
+    .white {
+      background: rgba(255,255,255,.8);
+      box-shadow: 2px 2px 0 hsla(0,0%,0%,.1);
+    }
+
+    .holder.white { width: 40%; margin: 0 auto; border-radius: 1em; padding: 20px;}
+
+    .white .title {
+      color: #403E3B;
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: 400;
+      text-shadow: none;
+      margin-top: 0;
+    }
+
+    .title {
+      font-size: 56px;
+      line-height: 60px;
+      font-weight: 300;
+      color: #fff;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 1px 2px 0 hsla(0,0%,0%,.1);
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 400;
+      color: #fff;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 1px 3px 0 hsla(0,0%,0%,.1);
+      font-family: 'Ubuntu';
+    }
+
+    .logo .pipe { font-family: 'Source Sans Pro'; font-size: 32px; font-weight: 300; }
+
+    @keyframes blink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+    @-webkit-keyframes blink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+    .blink {
+      animation: blink 1s step-start 0s infinite;
+      -webkit-animation: blink 1s step-start 0s infinite;
+    }
+
+    .subtitle { font-weight: 300; margin: 10px;}
+
+    .white .subtitle { color: #7D7C79; }
+    .white .example { color: #c9c9c9; background-image: linear-gradient(160deg,#FAF7F5 30%,rgba(251,248,245,0)82%); }
+    .italic {font-style: italic;}
+    .example {
+      color: #ccc;
+      background: #fff;
+      box-shadow: 0 2px 0 rgba(0,0,0,.1);
+      border-radius: 2em;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+      padding: 14px 30px 16px;
+      display: inline-block;
+      letter-spacing: .02em;
+    }
+    .domain {
+      color: #50B350;
+    }
+    .poweredby { color: #fff; font-family: 'Ubuntu'; position: absolute; width: 100%; text-align: center; bottom: 10px; font-size: 18px; font-weight: 300;}
+    .poweredby a { color: #fff; text-decoration: none;}
+    </style>
+</head>
+<body>
+  <div class="greenGradient">
+    <div class="screen1">
+      <span class="logo">gowww.io <span class="pipe blink">|</span></span>
+      <div class="holder">
+        <h1 class="title">Redirect naked domains for free</h1>
+        <p class="subtitle italic example">from http://<span class="domain">gowww.io</span> to http://<span class="domain">www.gowww.io</span></p>
+        <p class="subtitle">It works with <b>https</b> as well. SSL Support by <b>Let's Encrypt</b></p>
+      </div>
+    </div>
+    <div class="holder white">
+        <h2 class="title">How it works?</h2>
+        <p class="subtitle">It's simple. Just go to your DNS provider and add the following record</p>
+        <p class="subtitle italic example"><span class="domain">yourdomain.com</span> IN A <span class="domain">144.217.225.221</span></p>
+      </div>
+  </div>
+
+  <p class="poweredby">Powered by <span style="font-weight: 400; font-size: 18px;"><a href="http://www.cloudstrap.io">CloudStrap DevOPs Team</a></span></p>
+</body>
+</html>
